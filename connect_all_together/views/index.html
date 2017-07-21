@@ -1,0 +1,17 @@
+<head>
+<style>
+body { font-family: 'Helvetica', 'Arial', sans-serif; }
+</style>
+</head>
+
+<h1>inclusion</h1>
+<ul>
+<h3>Inclusion Student List</h3>
+<br>
+<hr>
+{% for  prop in example %}
+  <li>{{ prop.fname }}</li>
+{% else %}
+  <li>No movies found.</li>
+{% endfor %}
+</ul>
